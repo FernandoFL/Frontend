@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos HTML</title>
+</head>
+
+<body>
+    <!-- Titulos -->
+
+    <h1 id="tituloh1">Titulos h1</h1>
+    <h2>Titulos h2</h2>
+    <h3>Titulos h3</h3>
+    <h4>Titulos h4</h4>
+    <h5>Titulos h5</h5>
+    <h6>Titulos h6</h6>
+
+    <!-- Salto de linea -->
+
+    <br>
+
+    <!-- Linea horizontal -->
+
+    <hr>
+
+    <!-- Parrafos -->
+
+    <p><b>Lorem ipsum</b> dolor sit, <i>amet consectetur</i> adipisicing elit. <u>Debitis sit</u>, ullam enim adipisci molestias ipsa culpa ea tempora temporibus eaque, non quos harum voluptatem perspiciatis quibusdam, necessitatibus dignissimos facilis
+        fuga!
+    </p>
+    <p>
+        <b>
+            <i>
+                <u>
+                    Fernando Faúndez
+                </u>
+            </i>
+        </b>
+    </p>
+
+    <br>
+    <hr>
+
+    <!-- Imagenes -->
+
+    <img src="#" alt="Imagen1">
+    <img src="assets/img/tigre.jpg" alt="Cara tigre blanco" height="150">
+
+    <!-- Al agregar solo width o height, la imagen se proporciona acorde a ese tamaño -->
+
+    <img src="assets/img/logo.png" alt="Imagen con los logos de HTML,CSS y Javascript" height="150">
+
+    <br>
+    <hr>
+
+    <!-- Link o Hipervinculos -->
+    <a href="https://www.generation.org/">Visitar Generation</a>
+    <br>
+    <!-- URL valor absoluto, redirige a otra pagina web -->
+    <!-- Targer="_blank", abre la pagina en otra pestaña  -->
+    <a href="https://www.lun.com/" target="_blank">Acceder a Lun.com</a>
+    <br>
+    <!-- URl valor relativo, redirige dentro de la misma pagina -->
+    <a href="pagina2.html">Ir a la pagina 2</a>
+    <br>
+    <!-- URL valor anclaje, Movernos dentro de una misma pagina -->
+    <a href="#tituloh1">Ir a seccion de la pagina</a>
+    <br>
+    <a href="https://www.generation.org/">
+        <img src="assets/img/you-employed-home.png" width="150" alt="Logo you employed">
+    </a>
+    <br>
+    <hr>
+
+    <!-- Listas: Ordenadas y No Ordenadas -->
+    <!-- Lista Ordenada (Order List) -->
+    <ol>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>Grupo 7
+            <ol>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+            </ol>
+        </li>
+    </ol>
+
+    <!-- Lista No Ordenada (UnOrder List) -->
+    <ul>
+        <li>Grupo 1</li>
+        <li>Grupo 2</li>
+        <li>Grupo 3</li>
+        <li>Grupo 4</li>
+        <li>Grupo 5</li>
+        <li>Grupo 6</li>
+        <li>Grupo 7
+            <ul>
+                <li>Grupo 7.1</li>
+                <li>Grupo 7.2</li>
+            </ul>
+        </li>
+    </ul>
+
+    <!--
+        lista dinamica para JSP, pero se puede generar lo mismo con javaScript
+    <ul>
+        <c:forEach items="${lista}" var="item">
+            <li>${item}</li>
+        </c:forEach>
+    </ul>-->
+
+    <br>
+    <hr>
+
+    <!-- Tablas -->
+    <table>
+        <thead>
+            <!-- Es el encabezado de la tabla -->
+            <tr>
+                <th>Nombre</th>
+                <th>Apellido</th>
+                <th>Edad</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Es el cuerpo de la tabla -->
+            <tr>
+                <td>Fernando</td>
+                <td>Faúndez</td>
+                <td>29</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <br>
+    <hr>
+</body>
+
+</html>
