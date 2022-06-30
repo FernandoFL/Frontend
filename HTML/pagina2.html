@@ -11,6 +11,50 @@
 <body>
     <h1>Estoy e la pagina 2</h1>
     <a href="index.html">Volver al Index</a>
+
+    <br>
+
+    <!-- Selector - Radio Button -->
+    <!-- Name debe ser igual dentro del grupo de selectores, si son distintos se concideran elementos distintos -->
+    <!-- Este selector se caracteriza porque se puede selecionar solo un opción y una vez seleccionado ya no se puede desmarcar solo se puede cambiar de leccion -->
+    <h2>Seleccione una opción</h2>
+    <input type="radio" name="Opcion" id="html" value="html">HTML <br>
+    <input type="radio" name="Opcion" id="css" value="css">CSS <br>
+    <input type="radio" name="Opcion" id="js" value="js"><label for="js">JavaScript</label>
+    <br>
+    <hr>
+
+    <!-- Selector - Checkbox -->
+    <!-- Nos permite seleccionar más de una opción -->
+    <!-- Como buena practica se debe de acompañar de un label en donde el atributo for debe corresponder con el id del input  -->
+    <h2>Seleciones una o más opciones</h2>
+    <input type="checkbox" name="opciones1" id="opciones1" value="html"><label for="opciones1">HTML</label><br>
+    <input type="checkbox" name="opciones2" id="opciones2" value="css"><label for="opciones2">CSS</label><br>
+    <input type="checkbox" name="opciones3" id="opciones3" value="js"><label for="opciones3">JavaScript</label>
+    <br>
+    <hr>
+
+    <!-- Select -->
+    <h2>Seleccione una opción</h2>
+    <h6>Selector multiple</h6>
+    <Select id="lenguajes" name="lenguaje" multiple><!-- Se utiliza la palabra multiple cuando queremos que un selector permita optener más de un valor -->
+        <option value="0" selected>Selecione un lenguaje</option><!-- Se utiliza la palabra selected el la obcion predefinida a mostrar al usuario -->
+        <option value="1">Java</option>
+        <option value="2">JavaScript</option>
+        <option value="3">Python</option>
+        <option value="4">C#</option>
+    </Select>
+    <h6>Selector unitario</h6>
+    <Select id="lenguajes" name="lenguaje"><!-- Se utiliza la palabra multiple cuando queremos que un selector permita optener más de un valor -->
+        <option value="0" selected>Selecione un lenguaje</option><!-- Se utiliza la palabra selected el la obcion predefinida a mostrar al usuario -->
+        <option value="1">Java</option>
+        <option value="2">JavaScript</option>
+        <option value="3">Python</option>
+        <option value="4">C#</option>
+    </Select>
+    <br>
+    <hr>
+
 </body>
 
 </html>
