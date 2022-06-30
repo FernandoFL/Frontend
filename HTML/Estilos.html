@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS</title>
+    <style>
+        /* 3 Formas básicas de asignar estilos */
+        /* 1. Por elemento HTML */
+        
+        div {
+            background-color: greenyellow;
+            width: 100%;
+        }
+        
+        p {
+            background-color: aqua;
+        }
+        
+        img {
+            width: 25%;
+        }
+        /* em = 16px y rem*/
+        /* 2. por clase, se ven afectadas solo aquellas etiquetas que tengan la clase, afecta a cualquier tipo de etiqueta */
+        
+        .parrafos {
+            background-color: blue;
+            color: white;
+        }
+        /* 3. por ID, estilo especifico para la etiqueta */
+        
+        #parrafo2 {
+            background-color: red;
+            color: greenyellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <p>Parrafo 1</p>
+        <p class="parrafos">Parrafo 2</p>
+        <p class="parrafos">Parrafo 3</p>
+        <p id="parrafo2">Parrafo 4</p>
+        <img src="assets/img/logo.png" alt="">
+    </div>
+
+</body>
+
+</html>

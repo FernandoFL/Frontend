@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elementos de estilo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        
+        p {
+            height: 50px;
+            width: 200px;
+            color: white;
+            line-height: 1.5;
+            /* Separación entre las lineas de texto */
+            font-weight: 900;
+        }
+        
+        a {
+            color: white;
+            text-decoration: none;
+        }
+        
+        div {
+            /* overflow: scroll; */
+            /* Genera la barra de desplazamiento */
+            background: blue url(assets/img/tigre.jpg) no-repeat center;
+            background-size: 10%;
+            border-radius: 10px;
+            border-style: dotted;
+            border-color: greenyellow;
+            padding: 5px;
+            width: 50%;
+            margin: auto;
+            font-family: 'Courier New', Courier, monospace;
+            font-size: 25pt;
+        }
+        /* Posicion */
+        
+        .estatico {
+            font-size: 14pt;
+            width: 500px;
+            height: 30px;
+            position: static;
+        }
+        
+        .relativo {
+            font-size: 14pt;
+            width: 500px;
+            height: 30px;
+            position: relative;
+            left: 50px;
+        }
+        
+        .fijo {
+            font-size: 14pt;
+            width: 500px;
+            height: 30px;
+            position: fixed;
+            left: 300px;
+            bottom: 0px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <a href="#" ">Link de Prueba</a>
+        <p>Parrafo 1</p>
+    </div>
+    <div class="estatico ">
+        <p>Este es un texto con posicionamiento estatico</p>
+    </div>
+    <div class="relativo ">
+        <p>Este es un texto con posicionamiento estatico</p>
+    </div>
+    <div class="fijo ">
+        <p>Este es un texto con posicionamiento estatico</p>
+    </div>
+</body>
+
+</html>
