@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax 1</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="assets/css/bootstrap.css">
+
+    <!-- JQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(function() {
+            /* Se puede dar funcionalidad capturando los eventos de la misma forma que se hace en CSS. Elementos, clases, id */
+            /* $('#btnEnviar').evento(); */
+            /* get & set */
+            $('#btn1').click(function() {
+                let parrafo1 = $('#p1').text(); /* Obtener los valores  */
+                alert("Evento Click" + parrafo1);
+
+                /* Set */
+                $('#p1').text('Este es un nuevo mensaje');
+            });
+
+
+
+            /* Funciones de efectos o animaciones */
+
+            /* Hide() -> Oculta elementos */
+            $('#btn2').click(function() {
+                $('#p2').hide();
+            });
+
+            /* Show() -> Muestra elementos */
+            $('#btn3').click(function() {
+                $('#p2').show();
+            });
+
+            /* Toggle() -> Ocultar o mostrar elementos */
+            $('#btn4').click(function() {
+                $('#p2').toggle();
+            });
+
+            /* slideUp -> */
+            $('#btn5').click(function() {
+                $('#p3').slideUp(2000);
+            });
+
+            /* slideDown -> */
+            $('#btn6').click(function() {
+                $('#p3').slideDown('slow');
+            });
+
+            /* slideToggle -> */
+            $('#btn7').click(function() {
+                $('#p3').slideToggle('fast');
+            });
+
+            /* FideIn -> */
+            $('#btn8').click(function() {
+                $('#p4').fadeIn('slow');
+            });
+
+            /* FideOut -> */
+            $('#btn9').click(function() {
+                $('#p4').fadeOut('fast');
+            });
+
+            /* FideIn -> */
+            $('#btn10').click(function() {
+                $('#p4').fadeToggle(2000);
+            });
+            /* fin jquery */
+        });
+    </script>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Getter & Setter</h1>
+        <p id="p1"> Este es el parrafo 1</p>
+        <button id="btn1" class="btn btn-primary">Get Y Set</button>
+        <br>
+        <hr>
+        <!-- Efectos  -->
+        <!-- Hidde -->
+        <h1>Hide - Show - Toggle</h1>
+        <p id="p2"> Este es el parrafo 2</p>
+        <button id="btn2" class="btn btn-primary">Hide()</button>
+        <button id="btn3" class="btn btn-primary">Show()</button>
+        <button id="btn4" class="btn btn-primary">Toggle()</button>
+        <br>
+        <hr>
+        <!-- SlideUp, SlideDown y slideToggle -->
+        <h1>SlideUp - slideDown - SlideToggle</h1>
+        <p id="p3"> Este es el parrafo 3</p>
+        <button id="btn5" class="btn btn-primary">SlideUp()</button>
+        <button id="btn6" class="btn btn-primary">SlideDown()</button>
+        <button id="btn7" class="btn btn-primary">slideToggle()</button>
+        <br>
+        <hr>
+        <!-- FadeIn, FadeOut y FiceToggle -->
+        <h1>FadeIn - FadeOut - FadeToggle</h1>
+        <p id="p4"> Este es el parrafo 4</p>
+        <button id="btn8" class="btn btn-primary">FadeIn()</button>
+        <button id="btn9" class="btn btn-primary">FadeOut()</button>
+        <button id="btn10" class="btn btn-primary">FadeToggle()</button>
+        <br>
+        <hr>
+    </div>
+</body>
+
+</html>
